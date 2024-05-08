@@ -1,0 +1,45 @@
+.advantage {
+    margin: 0 20px 180px 20px;
+
+    .container {
+
+        .advantage__title {
+            @extend %h2;
+            color: #222;
+            margin-bottom: 90px;
+        }
+        .advantage__body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 30px;
+
+            @media (max-width: 900px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 510px){
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .block-advantage {
+                display: flex;
+                flex-direction: column;
+
+                .block-advantage__number {
+                    @extend %h2;
+                    color: #222;
+                    margin-bottom: 30px
+                }
+                .block-advantage__title {
+                    @extend %h3;
+                    color: #EB6D1B;
+                    margin-bottom: 8px
+                }
+                .block-advantage__text {
+                    @extend %p3;
+                    color: #777;
+                }
+            }
+        }
+    }
+}

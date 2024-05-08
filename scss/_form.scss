@@ -1,0 +1,123 @@
+.form {
+    margin: 0 20px 180px 20px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 900px){
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        .form__text-block{
+            width: 44%;
+
+            @media (max-width: 900px){
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            .form__title {
+                @extend %h1;
+                color: #EB6D1B;
+                margin-bottom: 60px;
+
+                @media (max-width: 900px){
+                    max-width: 800px;
+                }
+
+                @media (max-width: 510px){
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 57.6px;
+                }
+            }
+    
+            .form__text {
+                @extend %p3;
+                color: #777;
+                max-width: 558px;
+
+                @media (max-width: 510px){
+                    font-size: 25px;
+                    font-weight: 300;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .form-main {
+            display: flex;
+            flex-direction: column;
+            width: 44%;
+
+            @media (max-width: 900px){
+                width: 100%;
+            }
+
+            .form-main__input-email {
+                
+            }
+
+            .form-main__input-name {
+            }
+
+            .form-main__input-tel {
+            }
+
+            .input{
+                border: 1px solid #C1C1C1;
+                border-radius: 10px;
+                margin: 15px 0px;
+                padding: 21px 35px;
+                height: 70px;
+                width: 100%;
+
+                color: #222;
+                @extend %p3;
+
+                &::placeholder{
+                    @extend %p3;
+                    color: #C1C1C1;
+                }
+            }
+
+            .form-main__chekbox-personal {
+                display: flex;
+                align-items: center;
+                margin-bottom: 42.5px;
+
+                .form-main__chekbox {
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 5px;
+
+                    &:checked{
+                        accent-color: #fff;
+                    }
+                }
+
+                .form-main__text {
+                    @extend %p4;
+                    color: #222;
+                }
+            }
+
+            .form-main__button {
+                @extend %p2;
+                color: #fff;
+                background-color: #EB6D1B;
+                border-radius: 10px;
+                padding: 16px 40px;
+                max-width: 367px;
+
+                @media (max-width: 510px){
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

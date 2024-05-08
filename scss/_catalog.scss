@@ -1,0 +1,75 @@
+.catalog {
+    margin: 0 20px 180px 20px;
+    .container {
+
+        .catalog__title {
+            @extend %h2;
+            color: #222;
+            margin-bottom: 90px;
+        }
+        .catalog__body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            grid-auto-rows: minmax(100px, auto);
+
+            @media (max-width: 900px){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 510px){
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            justify-content: center;
+
+            .block-catalog {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+
+                .block-catalog__img {
+                    background-color: #F3F3F3;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    border: 2px solid #00000000;
+                    border-bottom: 2px solid #EB6D1B;
+
+                    & img{
+                        width: 100%;
+                        background-size: cover;
+                    }
+                }
+
+                .block-catalog__body {
+                    width: 100%;
+                    min-height: 58px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #EB6D1B;
+
+                    flex: 0 1 33.333%;
+
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+
+                    .block-catalog__text {
+                        @extend %p3;
+                        color: #fff;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        margin: 10px 12px;
+                    }
+                }
+            }
+
+            .block-catalog:hover .block-catalog__img{
+                border-top: 2px solid #EB6D1B;
+                border-left: 2px solid #EB6D1B;
+                border-right: 2px solid #EB6D1B;
+            }
+        }
+    }
+}
