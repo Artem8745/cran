@@ -22,24 +22,12 @@
                 & span{
                     color: #EB6D1B
                 }
-
-                @media (max-width: 510px){
-                    font-size: 40px;
-                    font-weight: 500;
-                    line-height: 57.6px;
-                }
             }
 
             .head__text{
                 @extend %p1;
                 color: #777777;
                 margin-bottom: 54px;
-
-                @media (max-width: 510px){
-                    font-size: 25px;
-                    font-weight: 300;
-                    line-height: 40px;
-                }
             }
 
             .head__button{
@@ -56,6 +44,10 @@
                     align-items: center;
                     justify-content: center;
                     color: #fff;
+                }
+
+                @media (max-width: 510px){
+                    width: 100%;
                 }
             }
         }

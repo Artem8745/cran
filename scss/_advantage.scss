@@ -25,19 +25,32 @@
                 display: flex;
                 flex-direction: column;
 
+                @media (max-width: 510px){
+                    flex-direction: row;
+
+                    & .block-advantage__number{
+                        margin-right: 20px;
+                        margin: auto 20px auto 0;
+                    }
+                }
+
                 .block-advantage__number {
                     @extend %h2;
                     color: #222;
                     margin-bottom: 30px
                 }
-                .block-advantage__title {
-                    @extend %h3;
-                    color: #EB6D1B;
-                    margin-bottom: 8px
-                }
-                .block-advantage__text {
-                    @extend %p3;
-                    color: #777;
+
+                .block-advantage__body{
+
+                    .block-advantage__title {
+                        @extend %h3;
+                        color: #EB6D1B;
+                        margin-bottom: 8px
+                    }
+                    .block-advantage__text {
+                        @extend %p3;
+                        color: #777;
+                    }
                 }
             }
         }

@@ -29,15 +29,16 @@
                 cursor: pointer;
 
                 .block-catalog__img {
-                    background-color: #F3F3F3;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                    border: 2px solid #00000000;
-                    border-bottom: 2px solid #EB6D1B;
 
                     & img{
                         width: 100%;
                         background-size: cover;
+
+                        background-color: #F3F3F3;
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        border: 2px solid #00000000;
+                        border-bottom: 2px solid #EB6D1B;
                     }
                 }
 
@@ -65,7 +66,7 @@
                 }
             }
 
-            .block-catalog:hover .block-catalog__img{
+            .block-catalog:hover .block-catalog__img img{
                 border-top: 2px solid #EB6D1B;
                 border-left: 2px solid #EB6D1B;
                 border-right: 2px solid #EB6D1B;

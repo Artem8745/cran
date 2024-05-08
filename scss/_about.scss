@@ -24,6 +24,11 @@
             @media (max-width: 900px){
                 width: 80%;
                 margin: 0 auto;
+
+                & img{
+                    border: 2px solid #EB6D1B;
+                    border-radius: 10px;
+                }
             }
 
             & img{
