@@ -46,3 +46,20 @@ body{
 
 @import 'pages-catalog.scss';
 @import 'contacts.scss';
+
+
+
+.mytg {
+    margin: 180px 20px;
+
+    .container {
+        .mytg__title {
+            @extend %h1;
+            color: #222;
+
+            & a{
+                color: #EB6D1B;
+            }
+        }
+    }
+}

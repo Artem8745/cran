@@ -66,3 +66,14 @@ window.addEventListener('scroll', e => {
         document.querySelector('.header').classList.remove('_active')
     }
 })
+
+
+const headerButton = document.querySelector('.header__button_touch')
+
+function menuToggleOff(){
+    document.getElementById('menu__toggle').checked=false;
+}
+
+headerButton.addEventListener('click', e => {
+    menuToggleOff()
+})
